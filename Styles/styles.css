@@ -33,6 +33,9 @@ body {
     font-size: 20px;
     color: #FDF7E4;
 }
+.navbar ul li a:hover{
+    color: black;
+}
 .logo{
     flex: 1;
     text-align: center;
@@ -61,13 +64,18 @@ body {
     font-size: 20px;
     cursor: pointer;
 }
+.reservation-button:hover {
+    background-color: #FDF7E4;
+    color: #A27B5C;
+    opacity: 1;
+}
 
 .slideshow{
     width: 100%;
     height: 652px;
     margin: 0; 
     padding: 0;
-    background-image: url(/Photos/pexels-rdne-stock-project-5738074.jpg);
+    background-image: url(/Photos/PORTADA1.jpg);
     background-size: cover; 
     background-position: center; 
     position: relative;
@@ -106,3 +114,28 @@ body {
     color: #FDF7E4;
     opacity: 1;
 } 
+
+.aboutus-content{
+    text-align: center;
+    height: 652px;
+    width: 70%;
+    margin: auto;
+    padding-top: 5%;
+    color: #FDF7E4;
+}
+.aboutus-content h2 {
+    font-family: "Anton";
+    font-weight: 100;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.aboutus-content p {
+    font-size: 30px; 
+    line-height: 1.8; 
+    font-family: "Anton";
+    font-weight: 400;
+    font-style: normal;
+    
+}
