@@ -1,0 +1,95 @@
+#top {
+    width: 100%;
+    height: 10vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between; /* Aligns children to each end */
+    align-items: center; /* Aligns children vertically */
+    background-color: blanchedalmond;
+}
+
+.navbar {
+    background-color: bisque;
+    flex: 1; /* Takes up remaining space */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; /* Displays list items horizontally */
+}
+
+.navbar ul li {
+    margin-right: 20px; /* Add spacing between menu items */
+}
+
+.navbar ul li a {
+    text-decoration: none;
+}
+
+.logo {
+    background-color: brown;
+    flex: 1; /* Takes up remaining space */
+    text-align: center; /* Center the content horizontally */
+}
+
+.reservation-button {
+    
+        background-color: blanchedalmond; /* Same as header background color */
+        border: 2px solid black; /* Border to indicate button */
+        color: black; /* Text color */
+        padding: 10px 20px; /* Adjust padding as needed */
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px; /* Adjust margin as needed */
+        cursor: pointer;
+        border-radius: 5px; /* Rounded corners */
+    }
+
+    .slideshow {
+        width: 100%;
+        height: 400px; /* Adjust the height as needed */
+        background-image: url('background-image.jpg'); /* Replace with the path to your background image */
+        background-size: cover; /* Cover the entire container */
+        background-position: center; /* Center the background image */
+        position: relative; /* Positioning for absolute child elements */
+      }
+      
+      .slideshow-content {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Center the content horizontally and vertically */
+        text-align: center;
+        color: white; /* Text color */
+      }
+      
+      .slideshow-content h2 {
+        font-size: 32px;
+        margin-bottom: 10px;
+      }
+      
+      .slideshow-content p {
+        font-size: 18px;
+      }
+      .slideshow-button {
+        padding: 10px 20px;
+        font-size: 18px;
+        background-color: transparent; /* Set initial background color to transparent */
+        color: #A27B5C;
+        border: 2px solid #A27B5C; /* Add border */
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease; /* Add opacity transition */
+        opacity: 0; /* Set initial opacity to 0 */
+    }
+    
+    .slideshow-button:hover {
+        background-color: #A27B5C;
+        color: #FDF7E4;
+        opacity: 1; /* Change opacity on hover */
+    }
+    
