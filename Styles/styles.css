@@ -6,6 +6,7 @@ body {
 
 #top{
     margin: 0%;
+    padding: 0;
     width: 100%;
     height: 10vh;
     z-index: 1000;
@@ -15,8 +16,7 @@ body {
 }
 .navbar{
     flex: 0.65;
-    margin: 0; 
-    padding: 0;
+    
 } 
 .navbar ul{
     list-style-type: none;
@@ -30,7 +30,7 @@ body {
 }
 .navbar ul li a{
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.3vw;
     color: #FDF7E4;
 }
 .navbar ul li a:hover{
@@ -43,7 +43,7 @@ body {
 }
 
 .logo img{
-    height: 100px;
+    height: 13vh;
     width: auto;
 }
 .reservation-space{
@@ -51,22 +51,22 @@ body {
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-right: 100px;
+    margin-right: 4%;
 }
 .reservation-button{
-    width: 70%;
+    padding: 1vh 2vw;
     border: 2px solid #FDF7E4; 
     color: #FDF7E4;
     border-radius: 20px;
-    padding: 11px 3px;
     text-align: center;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 1.2vw;
     cursor: pointer;
 }
 .reservation-button:hover {
     background-color: #FDF7E4;
     color: #A27B5C;
+    transition: background-color 1.0s ease;
     opacity: 1;
 }
 
@@ -149,4 +149,110 @@ body {
     height: 652px;
     width: 100%;
     color: #FDF7E4;
+}
+.menu-home-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    text-align: center;
+    width: 90%;
+    height: 90vh;
+    padding-left: 10%;
+    border: #FDF7E4;
+}
+.menu-home-items img{
+    width: 100px;
+    height: 110px;
+    border-radius: 50px;
+}
+
+.menu-home-item1{
+    flex: 1;
+    border: 2px solid;
+}
+
+.menu-home-item2{
+    flex: 1;
+}
+.menu-home-item3{
+    flex: 1;
+}
+.menu-home-item4{
+    flex: 1;
+}
+
+
+/* @media screen and (max-width: 768px) {
+    #top {
+        grid-template-columns: 1fr; 
+        grid-template-rows: auto auto auto; 
+        height: auto;
+    }
+    .navbar {
+        grid-row: 2; 
+        grid-column: 1; 
+    }
+    .logo {
+        grid-row: 1; 
+    }
+
+    .reservation-space {
+        grid-row: 3; 
+        grid-column: 1;
+    }
+} */
+@media screen and (max-width: 768px) {
+    #top {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+    }
+    
+    .navbar {
+        order: 2;
+        margin: 0;
+    }
+    
+    .logo {
+        order: 1;
+        height: auto;
+    }
+
+    .reservation-space {
+        order: 3;
+        margin-top: 10px;
+    }
+
+    .aboutus-content {
+        width: 90%;
+        padding-top: 5%;
+    }
+
+    .aboutus-content h2 {
+        font-size: 18px;
+        margin-bottom: 20px;
+    }
+
+    .aboutus-content p {
+        font-size: 16px; 
+        line-height: 1.5; 
+    }
+    .slideshow {
+        height: 50vh; /* Reducimos la altura del slideshow */
+    }
+    
+    .slideshow-content h2 {
+        font-size: 24px; 
+        margin-bottom: 5px; 
+    }
+    
+    .slideshow-content p {
+        font-size: 14px;
+        top: 70%;
+    }
+    
+    .slideshow-button {
+        padding: 8px 16px; 
+        font-size: 14px; 
+    }
 }

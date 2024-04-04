@@ -1,53 +1,69 @@
 #top {
+    margin: 0;
+    padding: 0;
     width: 100%;
-    height: 10vh;
+    height: 10vh; /* Altura del encabezado */
     z-index: 1000;
     display: flex;
-    justify-content: space-between; /* Aligns children to each end */
-    align-items: center; /* Aligns children vertically */
-    background-color: blanchedalmond;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #A27B5C;
 }
 
 .navbar {
-    background-color: bisque;
-    flex: 1; /* Takes up remaining space */
+    flex: 0.65;
 }
 
 .navbar ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
-    display: flex; /* Displays list items horizontally */
+    display: flex;
 }
 
 .navbar ul li {
-    margin-right: 20px; /* Add spacing between menu items */
+    padding-left: 2%; /* Ajuste el espacio de los elementos de la lista */
 }
 
 .navbar ul li a {
     text-decoration: none;
+    font-size: 1.5vw; /* Tamaño de fuente relativo */
+    color: #FDF7E4;
 }
 
 .logo {
-    background-color: brown;
-    flex: 1; /* Takes up remaining space */
-    text-align: center; /* Center the content horizontally */
+    flex: 1;
+    text-align: center;
+}
+
+.logo img {
+    height: 6vh; /* Tamaño del logo relativo */
+    width: auto; /* Permitir que el ancho se ajuste automáticamente */
+}
+
+.reservation-space {
+    flex: 0.5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 3%; /* Ajuste el espacio del botón de reserva */
 }
 
 .reservation-button {
-    
-        background-color: blanchedalmond; /* Same as header background color */
-        border: 2px solid black; /* Border to indicate button */
-        color: black; /* Text color */
-        padding: 10px 20px; /* Adjust padding as needed */
-        text-align: center;
-        text-decoration: none;
-        display: inline-block;
-        font-size: 16px;
-        margin: 10px; /* Adjust margin as needed */
-        cursor: pointer;
-        border-radius: 5px; /* Rounded corners */
-    }
+    padding: 1vh 2vw; /* Espaciado relativo para el botón */
+    font-size: 1.5vw; /* Tamaño de fuente relativo */
+    background-color: transparent;
+    color: #FDF7E4;
+    border: 1px solid #FDF7E4;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.reservation-button:hover {
+    background-color: #FDF7E4;
+    color: #A27B5C;
+}
 
     .slideshow {
         width: 100%;
@@ -93,3 +109,28 @@
         opacity: 1; /* Change opacity on hover */
     }
     
+
+    @media screen and (max-width: 768px) {
+        #top {
+            flex-direction: column; /* Cambiar a diseño de columna en pantallas pequeñas */
+            height: auto; /* Permitir que la altura se ajuste automáticamente */
+        }
+    
+        .navbar {
+            flex: auto; /* Permitir que la barra de navegación ocupe todo el ancho en pantallas pequeñas */
+            margin-bottom: 2vh; /* Espacio entre la barra de navegación y el logo */
+        }
+    
+        .logo {
+            order: -1; /* Mover el logo arriba */
+        }
+    
+        .reservation-space {
+            flex: auto; /* Permitir que el espacio de reserva ocupe todo el ancho en pantallas pequeñas */
+            margin-right: 0; /* Eliminar el margen derecho en pantallas pequeñas */
+        }
+    
+        .reservation-button {
+            margin-top: 2vh; /* Espacio entre el botón de reserva y el contenido anterior */
+        }
+    }
