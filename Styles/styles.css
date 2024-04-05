@@ -156,22 +156,28 @@ body {
     justify-content: space-around;
     text-align: center;
     width: 90%;
-    height: 90vh;
-    padding-left: 10%;
+    height: 60vh;
+    padding-left: 8%;
+}
+.hijo{
     border: #FDF7E4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .menu-home-items img{
-    width: 100px;
-    height: 110px;
+    width: 40%;
+    height: 40%;
     border-radius: 50px;
 }
 
-.menu-home-item1{
+.menu-home-item{
     flex: 1;
-    border: 2px solid;
+    border: 0.5px solid;
 }
 
-.menu-home-item2{
+/* .menu-home-item2{
     flex: 1;
 }
 .menu-home-item3{
@@ -179,6 +185,10 @@ body {
 }
 .menu-home-item4{
     flex: 1;
+} */
+.menu-home-description{
+    font-family: "Anton";
+
 }
 
 
