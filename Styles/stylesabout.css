@@ -1,0 +1,179 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #A27B5C;
+}
+
+#top{
+    margin: 0%;
+    padding: 0;
+    width: 100%;
+    height: 10vh;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar{
+    flex: 0.65;
+    
+} 
+.navbar ul{
+    list-style-type: none;
+    margin: 0%;
+    padding: 0%;
+    display: flex;
+} 
+.navbar ul li{
+    
+    padding-left: 10%;
+}
+.navbar ul li a{
+    text-decoration: none;
+    font-size: 1.3vw;
+    color: #FDF7E4;
+}
+.navbar ul li a:hover{
+    color: black;
+}
+.logo{
+    flex: 1;
+    text-align: center;
+ 
+}
+
+.logo img{
+    height: 13vh;
+    width: auto;
+}
+.reservation-space{
+    flex: 0.5;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-right: 4%;
+}
+.reservation-button{
+    padding: 1vh 2vw;
+    border: 2px solid #FDF7E4; 
+    color: #FDF7E4;
+    border-radius: 20px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.2vw;
+    cursor: pointer;
+}
+.reservation-button:hover {
+    background-color: #FDF7E4;
+    color: #A27B5C;
+    transition: background-color 1.0s ease;
+    opacity: 1;
+}
+
+.aboutus-content{
+    text-align: center;
+    height: 652px;
+    width: 60%;
+    margin: auto;
+    padding-top: 5%;
+    color: #FDF7E4;
+}
+.aboutus-content h2 {
+    font-family: "Anton";
+    font-weight: 100;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.aboutus-content p {
+    font-size: 30px; 
+    line-height: 1.8; 
+    font-family: "Anton";
+    font-weight: 400;
+    font-style: normal;
+}
+
+.divisor-pagina{
+    text-align: center;
+    font-size: 100px;
+    color: #FDF7E4;
+}
+
+.background-pic{
+    width: 90%;
+    height: 65vh;
+    margin: auto; 
+    padding: 0;
+    background-image: url(/Photos/pexels-los-muertos-crew-7601434.jpg);
+    background-size: cover; 
+    background-position: center; 
+    position: relative;
+}
+.background-pic::before{
+    content: "";
+    position:absolute;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 65vh;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.pic-content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #FDF7E4; 
+    z-index: 1;
+}
+
+.pic-content h2{
+    font-size: 32px;
+    margin-bottom: 10px;
+    font-family: "Anton";
+}
+
+.pic-content p{
+    font-size: 18px;
+    font-family: "Anton";
+}
+
+.philosophy{
+    height: 100vh;
+    text-align: center;
+    font-family: "Anton";
+    font-weight: 100;
+    font-style: italic;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+.philosophy-content{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    height: 100%;
+    justify-content: center; /* Center the flex items horizontally */
+    align-items: center;
+    gap: 20px;
+}
+
+.philosophy-text{
+    height: 50vh;
+    flex: 1; /* Adjust the width as needed */
+    color: #FDF7E4;
+    font-family: "Anton";
+}
+.philosophy-pic{
+    flex: 1; /* Adjust the width as needed */
+    height: 53vh;
+    margin: auto; 
+    background-image: url(/Photos/pexels-los-muertos-crew-7601434.jpg);
+    background-size: cover; 
+    background-position: center; 
+    position: relative;
+}   

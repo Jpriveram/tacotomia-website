@@ -4,9 +4,132 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Styles/stylesmenu.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
     <title>Tacotomia - menu</title>
 </head>
 <body>
-    
+    <header id="top"> 
+        <div class="navbar">
+            <ul>
+                <li><a href="/index.html" target="_self">Home</a></li>
+                <li><a href="/Pages/menu.html" target="_self">Menu</a></li>
+                <li><a href="/Pages/about.html" target="_self">About</a></li>
+                <li><a href="/Pages/contact.html" target="_self">Contact</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <img src="/Photos/tacotomia-logo.png" alt="tacotomia logo del restaurante">
+        </div>
+        <div class="reservation-space">
+            <div class="reservation-button"> 
+                RESERVA YA!
+            </div>
+        </div>
+    </header>
+
+    <div class="slideshow">
+        <div class="slideshow-content">
+          <h2>Hecha un vistazo al menu</h2>
+          <p>Sabores para todos lo apetitos</p>
+        </div>
+    </div>
+
+    <div class="menu">
+        <div class="menu-items">
+            <div class="menu-item hijo">
+                <img src="" alt="">
+                <span class="item-name"> nombre item 1</span>
+                <span>..............................</span>
+                <span> $5.00</span>
+                <p>descrpcion</p>
+            </div>
+            <div class="menu-item hijo">
+                <img src="" alt="">
+                <span class="item-name"> nombre item 2</span>
+                <span>..............................</span>
+                <span> $5.00</span>
+                <p>descrpcion</p>
+            </div>
+            <div class="menu-item hijo">
+                <img src="" alt="">
+                <span class="item-name"> nombre item 3</span>
+                <span>..............................</span>
+                <span> $5.00</span>
+                <p>descrpcion</p>
+            </div>
+            <div class="menu-item hijo">
+                <img src="" alt="">
+                <span class="item-name"> nombre item 4</span>
+                <span>..............................</span>
+                <span> $5.00</span>
+                <p>descrpcion</p>
+            </div>
+            <div class="menu-item hijo">
+                <img src="" alt="">
+                <span class="item-name"> nombre item 5</span>
+                <span>..............................</span>
+                <span> $5.00</span>
+                <p>descrpcion</p>
+            </div>
+            <div class="menu-item hijo">
+                <img src="" alt="">
+                <span class="item-name"> nombre item 6</span>
+                <span>..............................</span>
+                <span> $5.00</span>
+                <p>descrpcion</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="divisor-pagina">|</div>
+
+    <div class="reservation-home">
+        <h2>RESERVACIONES</h2>
+        <P>Reserva tu mesa en linea</P>
+        <div class="reservation-content">
+                <form >
+                    <label for="name">Nombre:</label>
+                    <input type="text" id="name" name="name" required>
+            
+                    <label for="phone">Telefono:</label>
+                    <input type="tel" id="phone" name="phone" required>
+            
+                    <label for="party-size">Numero de personas:</label>
+                    <input type="number" id="party-size" name="party-size" min="1" required>
+            
+                    <label for="day">Dia:</label>
+                    <select id="day" name="day" required>
+                        <option value="monday">Lunes</option>
+                        <option value="tuesday">Martes</option>
+                        <option value="wednesday">Miercoles</option>
+                        <option value="thursday">Jueves</option>
+                        <option value="friday">Viernes</option>
+                        <option value="saturday">Sabado</option>
+                    </select>
+            
+                    <label for="time">Hora:</label>
+                    <select id="time" name="time" required>
+                        <option value="12:00">12:00 PM</option>
+                        <option value="13:00">1:00 PM</option>
+                        <option value="14:00">2:00 PM</option>
+                        <option value="15:00">3:00 PM</option>
+                        <option value="16:00">4:00 PM</option>
+                        <option value="17:00">5:00 PM</option>
+                        <option value="18:00">6:00 PM</option>
+                        <option value="19:00">7:00 PM</option>
+                        <option value="20:00">8:00 PM</option>
+                        <option value="21:00">9:00 PM</option>
+                        <option value="22:00">10:00 PM</option>
+                        <option value="23:00">11:00 PM</option>
+                    </select>
+            
+                    <button type="submit">Reservar</button>
+                </form>
+            </div>
+     </div> 
+
 </body>
 </html>
