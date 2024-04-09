@@ -109,6 +109,7 @@ body {
     background-size: cover; 
     background-position: center; 
     position: relative;
+    background-attachment: fixed;
 }
 .background-pic::before{
     content: "";
@@ -157,19 +158,19 @@ body {
     flex-wrap: wrap;
     width: 90%;
     height: 100%;
-    justify-content: center; /* Center the flex items horizontally */
+    justify-content: center;
     align-items: center;
     gap: 20px;
 }
 
 .philosophy-text{
     height: 50vh;
-    flex: 1; /* Adjust the width as needed */
+    flex: 1; 
     color: #FDF7E4;
     font-family: "Anton";
 }
 .philosophy-pic{
-    flex: 1; /* Adjust the width as needed */
+    flex: 1; 
     height: 53vh;
     margin: auto; 
     background-image: url(/Photos/pexels-los-muertos-crew-7601434.jpg);
