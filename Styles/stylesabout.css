@@ -79,7 +79,6 @@ body {
     background-size: cover; 
     background-position: center; 
     position: relative;
-    background-attachment: fixed;
 }
 .background-pic1::before{
     content: "";
@@ -219,6 +218,7 @@ body {
     padding: 0;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10vh;
     gap: 20px;
 }
 
@@ -232,7 +232,7 @@ body {
     flex: 1; 
     height: 53vh;
     margin: auto; 
-    background-image: url(/Photos/pexels-los-muertos-crew-7601434.jpg);
+    background-image: url(/Photos/3-SOBRE\ NOSOTROS.jpg);
     background-size: cover; 
     background-position: center; 
     position: relative;
@@ -245,7 +245,7 @@ body {
     margin: auto;
     text-align: center;
     margin-bottom: 30px;
-    margin-top: 15%;
+    margin-top: 50vh;
 }
 
 .mission h2{
@@ -260,7 +260,7 @@ body {
     font-family: "Anton";
     line-height: 1.8; 
     font-weight: 400;
-    font-size: 60px;
+    font-size: 250%;
 }
 
 footer{

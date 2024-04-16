@@ -69,6 +69,9 @@ body {
     transition: background-color 1.0s ease;
     opacity: 1;
 }
+.divisor-pagina{
+    font-size: 10vh;
+}
 
 .background-pic1{
     width: 100%;
@@ -103,8 +106,8 @@ body {
 }
 
 .pic-content1 h2{
-    font-size: 32px;
-    margin-bottom: 10px;
+    font-size: 15vh;
+    margin-bottom: 2vh;
     font-family: "Anton";
 }
 
@@ -118,7 +121,8 @@ body {
     text-align: center;
     height: 100vh;
     color: #FDF7E4;
-    margin-bottom: 20vh;
+    margin: 0;
+    padding: 0;
 }
 
 .info p{
@@ -137,16 +141,23 @@ body {
     display: flex;
     flex-direction: row;
 }
-
+.info{
+    flex: 1 ;
+}
 
 .form-contact{
+    flex: 1;
+    height: 70vh;
+    width: 10%;
     background-color: #b58c67;
 }
 form {
     width: 90%;
+    height: 100%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     gap: 28px; 
 }
 
@@ -197,6 +208,7 @@ button:hover {
     text-align: center;
     height: 100vh;
     color: #FDF7E4;
+    margin: 0;
     margin-bottom: 20vh;
 }
 .location-home h2{
@@ -274,6 +286,7 @@ footer{
     width: 100vw;
     display: flex;
     flex-direction: column;
+    margin-top: 50vh;
     background-color:#b58c67;
 }
 .footer-1{
