@@ -144,13 +144,83 @@ body {
 
 }
 
-.item-img{
-    width: 40%;
-    height: 40%;
-    border-radius: 50%;
+.item-details{
+    color: #FDF7E4;
+    font-family: "Anton";
+    font-size: 150%;
+    margin-left: 5%;
+}
+.item-name{
+
+}
+
+.item-img1{
+    width: 25%;
+    height: 80%;
+    border-radius: 80%;
     margin: 0; 
     padding: 0;
-    background-image: url(/Photos/PORTADA3.jpg);
+    background-image: url(/Photos/SALSA-MOLCAJETE.jpg);
+    background-size: cover; 
+    position: relative;
+
+}
+
+.item-img2{
+    width: 30%;
+    height: 75%;
+    border-radius: 80%;
+    margin: 0; 
+    padding: 0;
+    background-image: url(/Photos/TACOS.jpg);
+    background-size: cover; 
+    position: relative;
+
+}
+
+.item-img3{
+    width: 25%;
+    height: 80%;
+    border-radius: 80%;
+    margin: 0; 
+    padding: 0;
+    background-image: url(/Photos/TOSTADAS-DE-CAMARON.jpg);
+    background-size: cover; 
+    position: relative;
+
+}
+
+.item-img4{
+    width: 35%;
+    height: 75%;
+    border-radius: 80%;
+    margin: 0; 
+    padding: 0;
+    background-image: url(/Photos/ENMOLADAS.jpg);
+    background-size: cover; 
+    position: relative;
+
+}
+
+.item-img5{
+    width: 25%;
+    height: 80%;
+    border-radius: 80%;
+    margin: 0; 
+    padding: 0;
+    background-image: url(/Photos/ELOTES.jpg);
+    background-size: cover; 
+    position: relative;
+
+}
+
+.item-img6{
+    width: 40%;
+    height: 70%;
+    border-radius: 80%;
+    margin: 0; 
+    padding: 0;
+    background-image: url(/Photos/QUESADILLITAS.jpg);
     background-size: cover; 
     position: relative;
 
@@ -266,4 +336,67 @@ button:hover {
     color: #A27B5C;
     transition: background-color 1.0s ease;
     opacity: 1;
+}
+
+footer{
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color:#b58c67;
+}
+.footer-1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.navbarf{
+    width: 40%;
+    justify-content: center;
+}
+.navbarf ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.navbarf ul li{
+    margin-right: 5%;
+}
+.navbarf ul li a{
+    text-decoration: none;
+    font-size: 1.3vw;
+    color: #FDF7E4;
+}
+.navbarf ul li:last-child{
+    margin-right: 0;
+}
+.navbarf ul li a:hover{
+    color: black;
+}
+
+.logof{
+    height: 17vh;
+}
+.logof img{
+    height: 20vh;
+    width: auto;
+}
+
+hr{
+    border: none;
+    height: 0.3vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 303vh;
+}
+
+.footer-2{
+    color: #FDF7E4;
+    
+}
+.footer-2 p{
+    text-align:center ;
+    font-size: 150%;
 }

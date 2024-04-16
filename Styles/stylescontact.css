@@ -74,8 +74,9 @@ body {
     width: 100%;
     height: 65vh;
     margin: auto; 
+    margin-bottom: 5vh;
     padding: 0;
-    background-image: url(/Photos/2-MENU2.jpg);
+    background-image: url(/Photos/PORTADA2.jpg);
     background-size: cover; 
     background-position: center; 
     position: relative;
@@ -110,4 +111,223 @@ body {
 .pic-content1 p{
     font-size: 18px;
     font-family: "Anton";
+}
+.form-info-contact{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    color: #FDF7E4;
+    margin-bottom: 20vh;
+}
+
+.info p{
+    font-family: "Anton";
+    margin-top: 6%;
+    margin-bottom: 3%;
+    font-size: 150%;
+    font-weight: 100;
+}
+
+.info h3{
+    font-size: 300%;
+}
+
+.info-content{
+    display: flex;
+    flex-direction: row;
+}
+
+
+.form-contact{
+    background-color: #b58c67;
+}
+form {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 28px; 
+}
+
+input{
+    width: 90%;
+    height: 7vh;
+    font-size: large;
+    color: #FDF7E4;
+    background-color: #b58c67;
+    caret-color:#FDF7E4;
+    border: none;
+    border-bottom: 0.5px solid black;  
+    outline: none; 
+}
+
+input:focus{
+    border-bottom: 0.5px solid #FDF7E4; /* o el color que desees */
+
+}
+input::placeholder{
+    color: #FDF7E4;
+}
+
+
+button{
+    padding: 2vh 4vw;
+    border: 2px solid #FDF7E4; 
+    color: #FDF7E4;
+    background-color: #A27B5C;
+    border-radius: 30px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.6vw;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FDF7E4;
+    color: #A27B5C;
+    transition: background-color 1.0s ease;
+    opacity: 1;
+}
+
+
+.location-home{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    color: #FDF7E4;
+    margin-bottom: 20vh;
+}
+.location-home h2{
+    font-family: "Anton";
+    margin: 0;
+    padding: 0;
+    height: 5vh;
+    font-size: 500%;
+}
+
+.location-home p{
+    font-family: "Anton";
+    margin-top: 6%;
+    margin-bottom: 3%;
+    font-size: 150%;
+    font-weight: 100;
+}
+.location-info p{
+    font-family: "Anton";
+    margin-top: 6%;
+    margin-bottom: 3%;
+    font-size: 150%;
+    font-weight: 100;
+}
+.location-contact span{
+    text-align: right;
+}
+
+.location-contact h3{
+    font-size: 300%;
+}
+.location-contact a{
+    text-decoration: none;
+    color: #FDF7E4;
+}
+
+.location-content{
+    display: flex;
+    height: 80%;
+    align-items: flex-start; 
+    justify-content: center; 
+    gap: 5%;
+}
+
+.location-info{
+    flex: 1;
+    text-align: left;
+    padding: 0%;
+    margin-left: 5vw;
+}
+
+.location-info hr{
+    border: none;
+    height: 0.3vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.location-opening h3{
+    font-size: 300%;
+
+}
+.location-map{
+    flex: 1;
+    height: 100%;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
+
+footer{
+    height: 30vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color:#b58c67;
+}
+.footer-1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.navbarf{
+    width: 40%;
+    justify-content: center;
+}
+.navbarf ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.navbarf ul li{
+    margin-right: 5%;
+}
+.navbarf ul li a{
+    text-decoration: none;
+    font-size: 1.3vw;
+    color: #FDF7E4;
+}
+.navbarf ul li:last-child{
+    margin-right: 0;
+}
+.navbarf ul li a:hover{
+    color: black;
+}
+
+.logof{
+    height: 17vh;
+}
+.logof img{
+    height: 20vh;
+    width: auto;
+}
+
+hr{
+    border: none;
+    height: 0.3vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 303vh;
+}
+
+.footer-2{
+    color: #FDF7E4;
+    
+}
+.footer-2 p{
+    text-align:center;
+    font-size: 150%;
 }

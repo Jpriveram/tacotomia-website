@@ -146,10 +146,28 @@ body {
 }
 .menu-home{
     text-align: center;
-    height: 652px;
+    height: 100vh;
     width: 100%;
     color: #FDF7E4;
 }
+
+.menu-home h2{
+    font-family: "Anton";
+    margin: 0;
+    padding: 0;
+    height: 5vh;
+    font-size: 80px;
+}
+
+.menu-home p{
+    font-family: "Anton";
+    margin-top: 6%;
+    margin-bottom: 3%;
+    font-size: 20px;
+    font-weight: 100;
+}
+
+
 .menu-home-items{
     display: flex;
     flex-wrap: wrap;
@@ -157,7 +175,48 @@ body {
     text-align: center;
     width: 90%;
     height: 60vh;
-    padding-left: 8%;
+    padding-left: 5%;
+    margin-top: 5vh;
+}
+.menu-home-img1{
+    width: 50%;
+    height: 40%;
+    border-radius: 80%;
+    margin: 0; 
+    padding: 0;
+    background-image: url(/Photos/SALSA-MOLCAJETE.jpg);
+    background-size: cover; 
+    position: relative;
+}
+.menu-home-img2{
+    width: 50%;
+    height: 40%;
+    border-radius: 80%;
+    margin: 0; 
+    padding: 0;
+    background-image: url(/Photos/TOSTADAS-DE-CAMARON.jpg);
+    background-size: cover; 
+    position: relative;
+}
+.menu-home-img3{
+    width: 50%;
+    height: 40%;
+    border-radius: 80%;
+    margin: 0; 
+    padding: 0;
+    background-image: url(/Photos/ELOTES.jpg);
+    background-size: cover; 
+    position: relative;
+}
+.menu-home-img4{
+    width: 50%;
+    height: 40%;
+    border-radius: 80%;
+    margin: 0; 
+    padding: 0;
+    background-image: url(/Photos/TACOS.jpg);
+    background-size: cover; 
+    position: relative;
 }
 .hijo{
     border: #FDF7E4;
@@ -166,10 +225,9 @@ body {
     justify-content: center;
     align-items: center;
 }
-.menu-home-items img{
-    width: 40%;
-    height: 40%;
-    border-radius: 50px;
+.menu-home-item p{
+    font-family: "Anton";
+    font-size: 150%;
 }
 
 .menu-home-item{
@@ -177,19 +235,96 @@ body {
     border: 0.5px solid;
 }
 
-.menu-home-description{
-    font-family: "Anton";
-
+.menu-home-item:hover{
+    background-color: #b58c67;
 }
 
+.location-home{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: 100vh;
+    color: #FDF7E4;
+    margin-bottom: 20vh;
+}
+.location-home h2{
+    font-family: "Anton";
+    margin: 0;
+    padding: 0;
+    height: 5vh;
+    font-size: 500%;
+}
+
+.location-home p{
+    font-family: "Anton";
+    margin-top: 6%;
+    margin-bottom: 3%;
+    font-size: 150%;
+    font-weight: 100;
+}
+.location-info p{
+    font-family: "Anton";
+    margin-top: 6%;
+    margin-bottom: 3%;
+    font-size: 150%;
+    font-weight: 100;
+}
+.location-contact span{
+    text-align: right;
+}
+
+.location-contact h3{
+    font-size: 300%;
+}
+.location-contact a{
+    text-decoration: none;
+    color: #FDF7E4;
+}
+
+.location-content{
+    display: flex;
+    height: 80%;
+    align-items: flex-start; 
+    justify-content: center; 
+    gap: 5%;
+}
+
+.location-info{
+    flex: 1;
+    text-align: left;
+    padding: 0%;
+    margin-left: 5vw;
+}
+
+.location-info hr{
+    border: none;
+    height: 0.3vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 100%;
+}
+
+.location-opening h3{
+    font-size: 300%;
+
+}
+.location-map{
+    flex: 1;
+    height: 100%;
+}
+
+iframe{
+    width: 100%;
+    height: 100%;
+}
 
 .reservation-home{
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra horizontalmente en la página */
-    justify-content: center; /* Centra verticalmente en la página */
+    align-items: center; 
+    justify-content: center; 
     height: 100vh; 
     color: #FDF7E4;
+    margin-top: 40vh;
     margin-bottom: 20vh;
 }
 
@@ -198,14 +333,14 @@ body {
     margin: 0;
     padding: 0;
     height: 5vh;
-    font-size: 80px;
+    font-size: 500%;
 }
 
 .reservation-home p{
     font-family: "Anton";
     margin-top: 6%;
     margin-bottom: 3%;
-    font-size: 20px;
+    font-size: 150%;
     font-weight: 100;
 }
 
@@ -340,6 +475,7 @@ hr{
 }
 .footer-2 p{
     text-align:center ;
+    font-size: 150%;
 }
 @media screen and (max-width: 768px) {
     #top {
@@ -394,5 +530,25 @@ hr{
     .slideshow-button {
         padding: 8px 16px; 
         font-size: 14px; 
+    }
+
+    .menu-home-items {
+        flex-direction: column;
+        justify-content: center; /* Center items vertically */
+        align-items: center; /* Center items horizontally */
+        height: 100%;
+    }
+
+    .menu-home-item {
+        width: 80%; /* Adjust width as needed */
+        margin-bottom: 5vh;
+    }
+    .menu-home-img1,
+    .menu-home-img2,
+    .menu-home-img3,
+    .menu-home-img4 {
+        width: 100%; /* Ensure images fill their containers */
+        height: auto; /* Maintain aspect ratio */
+        border-radius: 10px; /* Add rounded corners if desired */
     }
 }

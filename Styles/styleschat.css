@@ -65,33 +65,33 @@
     color: #A27B5C;
 }
 
-    .slideshow {
+.slideshow {
         width: 100%;
         height: 400px; /* Adjust the height as needed */
         background-image: url('background-image.jpg'); /* Replace with the path to your background image */
         background-size: cover; /* Cover the entire container */
         background-position: center; /* Center the background image */
         position: relative; /* Positioning for absolute child elements */
-      }
+}
       
-      .slideshow-content {
+.slideshow-content {
         position: absolute;
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%); /* Center the content horizontally and vertically */
         text-align: center;
         color: white; /* Text color */
-      }
+}
       
-      .slideshow-content h2 {
+.slideshow-content h2 {
         font-size: 32px;
         margin-bottom: 10px;
-      }
+}
       
-      .slideshow-content p {
+.slideshow-content p {
         font-size: 18px;
-      }
-      .slideshow-button {
+}
+.slideshow-button {
         padding: 10px 20px;
         font-size: 18px;
         background-color: transparent; /* Set initial background color to transparent */
@@ -101,36 +101,96 @@
         cursor: pointer;
         transition: background-color 0.3s ease, color 0.3s ease, opacity 0.3s ease; /* Add opacity transition */
         opacity: 0; /* Set initial opacity to 0 */
-    }
+}
     
-    .slideshow-button:hover {
+.slideshow-button:hover {
         background-color: #A27B5C;
         color: #FDF7E4;
         opacity: 1; /* Change opacity on hover */
-    }
+}
     
+footer{
+    height: 40vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    background-color:#b58c67;
+}
+.footer-1{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+.navbarf{
+    width: 40%;
+    justify-content: center;
+}
+.navbarf ul{
+    list-style-type:none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.navbarf ul li{
+    margin-right: 5%;
+}
+.navbarf ul li a{
+    text-decoration: none;
+    font-size: 1.3vw;
+    color: #FDF7E4;
+}
+.navbarf ul li:last-child{
+    margin-right: 0;
+}
+.navbarf ul li a:hover{
+    color: black;
+}
 
-    @media screen and (max-width: 768px) {
+.logof{
+    height: 17vh;
+}
+.logof img{
+    height: 20vh;
+    width: auto;
+}
+
+hr{
+    border: none;
+    height: 0.3vh;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 303vh;
+}
+
+.footer-2{
+    color: #FDF7E4;
+    
+}
+.footer-2 p{
+    text-align:center ;
+}
+@media screen and (max-width: 768px) {
         #top {
             flex-direction: column; /* Cambiar a diseño de columna en pantallas pequeñas */
             height: auto; /* Permitir que la altura se ajuste automáticamente */
-        }
+}
     
-        .navbar {
+.navbar {
             flex: auto; /* Permitir que la barra de navegación ocupe todo el ancho en pantallas pequeñas */
             margin-bottom: 2vh; /* Espacio entre la barra de navegación y el logo */
-        }
+}
     
-        .logo {
+.logo {
             order: -1; /* Mover el logo arriba */
-        }
+}
     
-        .reservation-space {
+.reservation-space {
             flex: auto; /* Permitir que el espacio de reserva ocupe todo el ancho en pantallas pequeñas */
             margin-right: 0; /* Eliminar el margen derecho en pantallas pequeñas */
-        }
+}
     
-        .reservation-button {
+.reservation-button {
             margin-top: 2vh; /* Espacio entre el botón de reserva y el contenido anterior */
-        }
+}
     }
