@@ -108,6 +108,10 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
+.slideshow-button a{
+    text-decoration: none;
+    color: #FDF7E4;
+}
 
 .slideshow-button:hover {
     background-color: #A27B5C;
@@ -357,13 +361,13 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 28px; /* Espacio entre elementos */
+    gap: 28px; 
 }
 
 label {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    max-width: 300px; /* Establece un ancho máximo para el etiqueta */
-    text-align: left; /* Alinea el texto a la izquierda */
+    width: 100%; 
+    max-width: 300px; 
+    text-align: left; 
 }
 
 input{
@@ -379,7 +383,7 @@ input{
 }
 
 input:focus{
-    border-bottom: 0.5px solid #FDF7E4; /* o el color que desees */
+    border-bottom: 0.5px solid #FDF7E4; 
 
 }
 input::placeholder{
@@ -416,7 +420,7 @@ button:hover {
 }
 
 footer{
-    height: 40vh;
+    height: 30vh;
     width: 100vw;
     display: flex;
     flex-direction: column;
@@ -478,26 +482,7 @@ hr{
     font-size: 150%;
 }
 @media screen and (max-width: 768px) {
-    #top {
-        flex-direction: column;
-        align-items: center;
-        height: auto;
-    }
     
-    .navbar {
-        order: 2;
-        margin: 0;
-    }
-    
-    .logo {
-        order: 1;
-        height: auto;
-    }
-
-    .reservation-space {
-        order: 3;
-        margin-top: 10px;
-    }
 
     .aboutus-content {
         width: 90%;
@@ -514,7 +499,7 @@ hr{
         line-height: 1.5; 
     }
     .slideshow {
-        height: 50vh; /* Reducimos la altura del slideshow */
+        height: 50vh; 
     }
     
     .slideshow-content h2 {
@@ -531,24 +516,136 @@ hr{
         padding: 8px 16px; 
         font-size: 14px; 
     }
+    .menu-home-content {
+        padding: 20px;
+        text-align: center;
+    }
+.menu-home{
+    margin-bottom: 20vh;
+
+}
+    .menu-home h2 {
+        font-size: 200%;
+    }
+
+    .menu-home p {
+        font-size: 100%;
+    }
 
     .menu-home-items {
         flex-direction: column;
-        justify-content: center; /* Center items vertically */
-        align-items: center; /* Center items horizontally */
+        justify-content: center; 
+        align-items: center;
         height: 100%;
     }
 
     .menu-home-item {
-        width: 80%; /* Adjust width as needed */
+        width: 80%; 
         margin-bottom: 5vh;
     }
+.hijo{
+    width: 100%;
+}
     .menu-home-img1,
     .menu-home-img2,
     .menu-home-img3,
     .menu-home-img4 {
-        width: 100%; /* Ensure images fill their containers */
-        height: auto; /* Maintain aspect ratio */
-        border-radius: 10px; /* Add rounded corners if desired */
+        width: 100%; 
+        height: auto;
+        border-radius: 10px; 
     }
+
+    .info p,
+    .location-home p,
+    .location-info p {
+        font-size: 100%; 
+    }
+
+    .info h3,
+    .location-home h2,
+    .location-contact h3,
+    .location-opening h3 {
+        font-size: 200%; 
+    }
+
+    .location-home {
+        padding: 20px;
+        text-align: center;
+        margin-top: 90vh;
+    }
+
+    .location-home h2 {
+        font-size: 200%;
+    }
+
+    .location-home p {
+        font-size: 100%;
+    }
+
+    .location-info {
+        flex-direction: column;
+    }
+
+    .location-contact,
+    .location-opening {
+        margin-bottom: 20px;
+    }
+
+    .location-info hr {
+        width: 80%;
+    }
+
+    .location-map iframe {
+        width: 100%;
+        height: 300px; /* Ajustar según sea necesario */
+    }
+.location-home{
+    margin-top: 0;
+}
+.location-content{
+    display: flex;
+    margin-top: 20vh;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+.location-map{
+    width: 50vw;
+    height: 50vh;
+}
+.reservation-home {
+    text-align: center;
+}
+
+.reservation-home h2 {
+    font-size: 200%;
+}
+
+.reservation-home p {
+    font-size: 100%;
+}
+
+.reservation-content form {
+    width: 90%;
+    margin: auto;
+}
+
+.reservation-content form input,
+.reservation-content form select {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.reservation-content form button {
+    width: 100%;
+}
+
+.footer-1 li a{
+font-size: 50vh;
+}
+
+
+.footer-2 p {
+    font-size: 100%;
+}
 }

@@ -156,7 +156,7 @@ body {
 
 .item-img1{
     width: 25%;
-    height: 80%;
+    height: 55%;
     border-radius: 80%;
     margin: 0; 
     padding: 0;
@@ -168,7 +168,7 @@ body {
 
 .item-img2{
     width: 30%;
-    height: 75%;
+    height: 60%;
     border-radius: 80%;
     margin: 0; 
     padding: 0;
@@ -180,7 +180,7 @@ body {
 
 .item-img3{
     width: 25%;
-    height: 80%;
+    height: 55%;
     border-radius: 80%;
     margin: 0; 
     padding: 0;
@@ -192,7 +192,7 @@ body {
 
 .item-img4{
     width: 35%;
-    height: 75%;
+    height: 60%;
     border-radius: 80%;
     margin: 0; 
     padding: 0;
@@ -204,7 +204,7 @@ body {
 
 .item-img5{
     width: 25%;
-    height: 80%;
+    height: 55%;
     border-radius: 80%;
     margin: 0; 
     padding: 0;
@@ -216,7 +216,7 @@ body {
 
 .item-img6{
     width: 40%;
-    height: 70%;
+    height: 55%;
     border-radius: 80%;
     margin: 0; 
     padding: 0;
@@ -225,15 +225,7 @@ body {
     position: relative;
 
 }
-/* .menu-item img{
-    max-width: 40%; 
-    max-height: 70%; 
-    border-radius: 50%;
-    object-fit: cover;
-} */
 
-.item-details{
-}
 
 .divisor-pagina{
     text-align: center;
@@ -245,8 +237,8 @@ body {
 .reservation-menu{
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centra horizontalmente en la página */
-    justify-content: center; /* Centra verticalmente en la página */
+    align-items: center; 
+    justify-content: center; 
     height: 100vh; 
     color: #FDF7E4;
 }
@@ -280,13 +272,13 @@ form {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 28px; /* Espacio entre elementos */
+    gap: 28px; 
 }
 
 label {
-    width: 100%; /* Ocupa todo el ancho disponible */
-    max-width: 300px; /* Establece un ancho máximo para el etiqueta */
-    text-align: left; /* Alinea el texto a la izquierda */
+    width: 100%;
+    max-width: 300px; 
+    text-align: left; 
 }
 
 input{
@@ -302,7 +294,7 @@ input{
 }
 
 input:focus{
-    border-bottom: 0.5px solid #FDF7E4; /* o el color que desees */
+    border-bottom: 0.5px solid #FDF7E4;
 
 }
 input::placeholder{
@@ -399,4 +391,68 @@ hr{
 .footer-2 p{
     text-align:center ;
     font-size: 150%;
+}
+
+@media (max-width: 768px) {
+ 
+    .reservation-menu {
+        padding: 20px;
+        text-align: center;
+    }
+
+    .reservation-menu h2 {
+        font-size: 200%;
+    }
+
+    .reservation-menu p {
+        font-size: 100%;
+    }
+
+    .reservation-content form {
+        width: 90%;
+        margin: auto;
+    }
+
+    .reservation-content form input,
+    .reservation-content form select {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .reservation-content form button {
+        width: 100%;
+    }
+    .menu-items{
+    display: flex;
+    flex-direction: column;
+    height: 190vh;
+    align-items: center;
+    flex-wrap: wrap;
+ }
+
+ .item-img1,
+ .item-img2,
+ .item-img3,
+ .item-img4,
+ .item-img5,
+ .item-img6{
+    width: 100%;
+    height: 50%;
+ }
+ 
+ .item-details{
+    height: 50%;
+    width: 100%;
+    font-size: 80%;
+ }
+
+ .reservation-menu{
+    margin-top: 85vh;
+ }
+ 
+ 
+    .footer-2{
+    font-size: 70%;
+}
+
 }

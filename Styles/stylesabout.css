@@ -326,4 +326,56 @@ hr{
     font-size: 150%;
 }
 
+@media (max-width: 768px) {
+    
+    .background-pic1 {
+        height: 40vh;
+    }
+    .background-pic1::before{
+        height: 40vh;
+    }
 
+
+    .aboutus-content {
+        width: 90%;
+        height: 40vh;
+    }
+    .aboutus-content p{
+        font-size: 100%;
+    }
+
+    .philosophy-text{
+        height: 50vh;
+    }
+    .philosophy-content{
+        margin-top: 0;
+    }
+
+    .philosophy h2 {
+        font-size: 50px;
+    }
+
+    .philosophy p {
+        font-size: 25px;
+        margin-bottom: 0vh;
+    }
+
+    .mission h2 {
+        font-size: 16px;
+    }
+
+    .mission p {
+        font-size: 150%;
+    }
+
+    .philosophy-text,
+  .mission {
+    font-size: 100%; 
+  }
+
+.footer-2{
+    font-size: 70%;
+}
+
+    
+}

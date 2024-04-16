@@ -174,7 +174,7 @@ input{
 }
 
 input:focus{
-    border-bottom: 0.5px solid #FDF7E4; /* o el color que desees */
+    border-bottom: 0.5px solid #FDF7E4; 
 
 }
 input::placeholder{
@@ -343,4 +343,39 @@ hr{
 .footer-2 p{
     text-align:center;
     font-size: 150%;
+}
+
+
+@media (max-width: 768px) {
+    
+    
+    .info p,
+    .location-home p,
+    .location-info p {
+        font-size: 100%; /* Ajusta el tamaño de letra según sea necesario */
+    }
+
+    .info h3,
+    .location-home h2,
+    .location-contact h3,
+    .location-opening h3 {
+        font-size: 200%; 
+    }
+.location-home{
+    margin-top: 0;
+}
+.location-content{
+    display: flex;
+    margin-top: 20vh;
+    flex-direction: column;
+    align-items: center;
+    width: 100vw;
+}
+.location-map{
+    width: 50vw;
+    height: 50vh;
+}
+.footer-2{
+        font-size: 70%;
+}
 }
